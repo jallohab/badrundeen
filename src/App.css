@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+/*
+ * Globals
+ */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-image: url("./badrudeen.png");
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+  max-width: 65em;
+}
+.title {
+  font-family: Georgia, serif;
+}
+.inTitle {
+  font-family: Copperplate, Papyrus, fantasy;
+  /* font-size: 200; */
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .Nav.Link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .Nav.Link:hover,
+.nav-masthead .Nav.Link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .Nav.Link + .Nav.Link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+.logo-img {
+  /* display: block; */
+  max-width: 40%;
+  height: auto;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  padding: 20px 0;
+}
+
+
+
+.fab {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.fab :hover {
+  color: #40e340;
+  transform: scale(1.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbotron {
+  background-image: url("../src/images/jumbotron.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #333;
 }
+
+/* .mycontent-left {
+  border-right: 1px dashed white;
+  
+
+} */
+#contactMessage {
+  
+  height: 200px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: rgb(63, 133, 238);
+  border-color: #fff;
+  line-height: 1.8;
+}
+
+
+/* .slider {
+  position: relative;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.cardItem {
+  width: 350px;
+  height: 415px;
+  border: .05rem solid #fff;
+}
+
+.btn-primary,
+  .btn-primary:hover {
+    background-color: #333;
+    border-color: #fff;
+    line-height: 1.8;
+    flex: 1; 
+  }
+
+
+/* .btn-primary {
+  z-index: 10px;
+  cursor: pointer;
+  user-select: none;
+} */
+
+.titleDesc {
+  color: black;
+  background-color: white;
+  width: 100%;
+  border-color: #fff; 
+}
+
+
+.image {
+  border-color: #fff;
+}
+
+/*
+* Meet Us Styling
+*/
+.intro-bg {
+  background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  transform: skewY(-5deg);
+}
+
+.intro-bg:hover {
+  transform: skewY(0deg);
+  transform: scale(1.15);
+  transform: translateY(-25px);
+}
+
+.intro-bg-normal {
+  height: 100%;
+  width: 100%;
+  /* transform: translateY(-40px); */
+}
+
+.content {
+  max-width: 50em;
+  margin: 0 auto;
+  color: black;
+  text-shadow: #333;
+}
+
+.carouselCard h4,
+.carouselCard p {
+  color: black;
+}
+
