@@ -82,7 +82,11 @@ body {
   margin-right: 2em; 
   font-family: Courier New
 }
+.instrcutor-name {
+  background-color: #2c3c81;
+  
 
+}
 /*
  * Header
  */

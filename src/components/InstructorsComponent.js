@@ -8,9 +8,9 @@ import { Collapse, CardBody, Card, CardHeader } from "reactstrap";
 
 import "../App.css";
 
-import { Form, Button, FormGroup, FormText } from "react-bootstrap";
-import { Input } from "reactstrap";
-import { Row, Col, Container } from "reactstrap";
+// import { Form, Button, FormGroup, FormText } from "react-bootstrap";
+// import { Input } from "reactstrap";
+// import { Row, Col, Container } from "reactstrap";
 
 const responsive = {
   desktop: {
@@ -71,11 +71,10 @@ class Instructors extends Component {
                 />
                 <div className="titleDesc">
                   <Card onClick={this.toggle}>
-                    <CardHeader>
+                    <CardHeader className="instrcutor-name">
                       <span
-                        id="msingleton"
-                        className="font-weight-bold"
-                        style={{ color: "#333333" }}
+                        className="font-weight-bold "
+                        style={{ color: "orange" }}
                       >
                         <h4 className="card-title">{e.name}</h4>
                       </span>
