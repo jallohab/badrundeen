@@ -15,12 +15,12 @@ function Header(props) {
         ></img>
       </NavbarBrand>
       <h3 className="masthead-brand">BADRUNDEEN</h3>
-      <Nav className="nav nav-masthead justify-content-center">
+      <Nav className="nav nav-masthead pl-3">
         <Nav.Link href="/home">Home</Nav.Link>
-        <Nav.Link href="/features">Causes</Nav.Link>
-        <Nav.Link href="/meetus">Event(s)</Nav.Link>
-        <Nav.Link href="/aboutus">Our Instructor</Nav.Link>
-        <Nav.Link href="/contact">Donate</Nav.Link>
+        <Nav.Link href="/classes">Classes</Nav.Link>
+        <Nav.Link href="/instructors">Our Instructors</Nav.Link>
+        <Nav.Link href="/prayers">Prayer Time</Nav.Link>
+        <Nav.Link href="/donate">Donate</Nav.Link>
         <Nav.Link href="/contact">Contact Us</Nav.Link>
       </Nav>
     </div>

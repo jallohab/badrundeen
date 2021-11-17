@@ -8,12 +8,23 @@ const Home = () => {
       <h1
         className="title"
         style={{
-          padding: 60,
+          paddingTop: 60,
           fontSize: 70,
           justifyContent: "center",
         }}
       >
         Badrundeen Masjid
+      </h1>
+      <h1
+        className="title"
+        style={{
+          paddingBottom: 60,
+          fontSize: 70,
+          justifyContent: "center",
+          color: "black",
+        }}
+      >
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
       </h1>
       <strong>
         <h2 className="inTitle">

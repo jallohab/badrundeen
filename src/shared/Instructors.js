@@ -1,4 +1,4 @@
-export const FEATURES = [
+export const INSTRUCTORS = [
   {
     id: 0,
     name: "Features Name 1",

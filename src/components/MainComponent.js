@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import Home from "./HomeComponent";
 import Footer from "./FooterComponent";
 import Header from "./HeaderComponent";
-import AboutUs from "./AboutUsComponent";
+import Classes from "./ClassesComponent";
 import ContactUs from "./ContactComponent";
-import MeetUS from "./MeetUsComponent";
-import Feature from "./FeatureComponent";
+import Prayers from "./PrayersComponent";
+import Instructors from "./InstructorsComponent";
+import Donate from "./DonateComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
-import { FEATURES } from "../shared/feature";
+import { INSTRUCTORS } from "../shared/Instructors";
 import "../App.css";
 
 class Main extends Component {
@@ -18,10 +19,11 @@ class Main extends Component {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/contact" component={ContactUs} />
-          <Route path="/features" component={Feature} />
+          <Route path="/instructors" component={Instructors} />
           {/* <Route path="/features" render={() => <Feature item={FEATURES} />} /> */}
-          <Route path="/aboutus" component={AboutUs} />
-          <Route path="/meetus" component={MeetUS} />
+          <Route path="/classes" component={Classes} />
+          <Route path="/prayers" component={Prayers} />
+          <Route path="/donate" component={Donate} />
 
           <Redirect to="/home" />
         </Switch>

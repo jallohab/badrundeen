@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FEATURES } from "../shared/feature";
+import { INSTRUCTORS } from "../shared/Instructors";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image, Label } from "semantic-ui-react";
@@ -55,7 +55,7 @@ class Feature extends Component {
           itemClass="image-item"
           responsive={responsive}
         >
-          {FEATURES.slice(0, 6).map((e, i) => {
+          {INSTRUCTORS.slice(0, 6).map((e, i) => {
             return (
               <div
                 className="container"
