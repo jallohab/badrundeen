@@ -31,17 +31,17 @@ function RenderContactForm() {
                 fontSize: 25,
               }}
             >
-              <div>
+              <div class="address">
                 <address>
-                  12345 Nucamp Street
+                  1350 Chrystal Lake
                   <br />
                   Atlanta, GA 12345
                 </address>
               </div>
-              <div>
-                <address>(901) 463-0899</address>
+              <div class="address">
+                <address>(123) 456-000</address>
               </div>
-              <div>
+              <div class="address">
                 <address>admin@gcms.com</address>
               </div>
             </div>

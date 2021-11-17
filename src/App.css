@@ -46,6 +46,12 @@ body {
   font-family: Copperplate, Papyrus, fantasy;
   /* font-size: 200; */
 }
+.followUs {
+  font-family: Georgia, serif;
+}
+.address {
+  font-family: Georgia, serif;
+}
 
 
 /*
@@ -171,7 +177,9 @@ body {
 
 .btn-primary,
   .btn-primary:hover {
-    background-color: #333;
+    
+    background: none;
+    color: inherit;
     border-color: #fff;
     line-height: 1.8;
     flex: 1; 

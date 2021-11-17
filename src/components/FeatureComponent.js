@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FEATURES } from "../shared/feature";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image, Label } from "semantic-ui-react";
+import { Collapse, CardBody, Card, CardHeader } from "reactstrap";
 
 import "../App.css";
 
@@ -15,77 +16,84 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
+    slidesToSlide: 1,
   },
 };
-const Feature = (props) => {
-  return (
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h3 class="mb-3">Upcoming Features</h3>
+class Feature extends Component {
+  constructor(props) {
+    super(props);
+    // this.toggle = this.toggle.bind(this);
+    this.state = { collapse: false };
+  }
+  toggle = () => {
+    this.setState({ collapse: !this.state.collapse });
+  };
+  render() {
+    return (
+      <>
+        <div class="row">
+          <div class="col-4">
+            <a class="btn " href="#featuresCarousel"></a>
+            <a class="btn " href="#featuresCarousel"></a>
+          </div>
         </div>
-        <div class="col-5 text-right">
-          <a
-            class="btn btn-primary mb-3 mr-1"
-            href="#featuresCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <i class="fa fa-arrow-left" />
-          </a>
-          <a
-            class="btn btn-primary mb-3"
-            href="#featuresCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <i class="fa fa-arrow-right" />
-          </a>
-        </div>
-        <div class="col"></div>
-      </div>
 
-      <Carousel
-        ssr
-        partialVisbile
-        props={props}
-        itemClass="image-item"
-        responsive={responsive}
-      >
-        {FEATURES.slice(0, 6).map((image) => {
-          return (
-            <div className="container">
-              <Image
-                draggable={false}
-                style={{
-                  width: "100%",
-                  height: "310px",
-                }}
-                src={image.image}
-              />
-              <div className="titleDesc">
-                <h4 className="card-title">Feature Name</h4>
-                <p className="card-text">
-                  Brief Feature Introduction goes here
-                </p>
+        <Carousel
+          ssr
+          partialVisbile
+          props={this.props}
+          itemClass="image-item"
+          responsive={responsive}
+        >
+          {FEATURES.slice(0, 6).map((e, i) => {
+            return (
+              <div
+                className="container"
+                style={{ margin: 50, paddingRight: 60 }}
+              >
+                <Image
+                  draggable={false}
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                  }}
+                  src={e.image}
+                />
+                <div className="titleDesc">
+                  <Card onClick={this.toggle}>
+                    <CardHeader>
+                      <span
+                        id="msingleton"
+                        className="font-weight-bold"
+                        style={{ color: "#333333" }}
+                      >
+                        <h4 className="card-title">{e.name}</h4>
+                      </span>
+                    </CardHeader>
+                    <Collapse isOpen={this.state.collapse}>
+                      <CardBody>
+                        <p className="card-text">{e.description}</p>
+                      </CardBody>
+                    </Collapse>
+                  </Card>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </Carousel>
-    </div>
-  );
-};
+            );
+          })}
+        </Carousel>
+      </>
+    );
+  }
+}
 
 export default Feature;

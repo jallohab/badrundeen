@@ -14,7 +14,6 @@ class Main extends Component {
   render() {
     return (
       <>
-        <Footer />
         <Header />
         <Switch>
           <Route path="/home" component={Home} />
@@ -26,6 +25,7 @@ class Main extends Component {
 
           <Redirect to="/home" />
         </Switch>
+        <Footer />
       </>
     );
   }

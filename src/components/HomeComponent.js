@@ -1,8 +1,8 @@
-import React from "react";
+import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
-function Home(props) {
+const Home = () => {
   return (
     <div>
       <h1
@@ -43,6 +43,6 @@ function Home(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

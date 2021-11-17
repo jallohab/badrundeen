@@ -5,7 +5,7 @@ import { NavbarBrand } from "reactstrap";
 
 function Header(props) {
   return (
-    <div>
+    <div style={{ padding: 20 }}>
       <NavbarBrand className="masthead-brand" href="/">
         <img
           className="masthead-brand ml-3"
