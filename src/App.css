@@ -43,12 +43,12 @@ body {
   font-family: Georgia, serif;
 }
 .inTitle {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: "Lucida Console", "Courier New", monospace;
   /* font-size: 200; */
 }
 
 .followUs {
-  font-family: Georgia, serif;
+  font-family: "Brush Script MT", cursive
 }
 .address {
   font-family: Georgia, serif;

@@ -4,13 +4,13 @@ import React from "react";
 function Footer(props) {
   return (
     <>
-      <footer className="fixed-bottom" style={{ paddingBottom: 20 }}>
+      <footer className="fixed-bottom">
         <div className="container">
           <div className="row justify-content-left ml-4">
             <span>
               <h5
                 className="followUs"
-                style={{ color: "yellow", fontSize: "10" }}
+                style={{ color: "yellow", fontSize: 35 }}
               >
                 Follow Us{" "}
               </h5>
