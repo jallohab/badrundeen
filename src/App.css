@@ -53,7 +53,35 @@ body {
 .address {
   font-family: Georgia, serif;
 }
-
+.adult-class {
+  background-color: #8ccfc2;
+  
+}
+.children-class {
+  background-color: #516f70;
+  
+}
+.students-join {
+  background-color: #2c3c81; 
+}
+.events {
+  background-color: yellow; 
+}
+.aboutus {
+  background-color: white;
+  color: black;
+}
+.full-width-div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.inline-p {
+  text-align: justify;
+  padding-top: 10;
+  margin-right: 2em; 
+  font-family: Courier New
+}
 
 /*
  * Header

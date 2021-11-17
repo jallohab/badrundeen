@@ -42,7 +42,7 @@ function RenderContactForm() {
                 <address>(123) 456-0000</address>
               </div>
               <div class="address">
-                <address>badrundeed@gmail.com</address>
+                <address>masjidbadrundeed@gmail.com</address>
               </div>
             </div>
           </Col>

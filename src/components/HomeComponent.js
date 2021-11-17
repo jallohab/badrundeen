@@ -41,7 +41,7 @@ const Home = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <div style={{ padding: 40 }}>
-          <a href="/classes" className="btn btn-lg btn-primary">
+          <a href="/programs" className="btn btn-lg btn-primary">
             Learn more
           </a>
         </div>
