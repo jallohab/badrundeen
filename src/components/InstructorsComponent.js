@@ -29,7 +29,7 @@ const responsive = {
     slidesToSlide: 1,
   },
 };
-class Feature extends Component {
+class Instructors extends Component {
   constructor(props) {
     super(props);
     // this.toggle = this.toggle.bind(this);
@@ -96,4 +96,4 @@ class Feature extends Component {
   }
 }
 
-export default Feature;
+export default Instructors;

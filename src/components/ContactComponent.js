@@ -33,16 +33,16 @@ function RenderContactForm() {
             >
               <div class="address">
                 <address>
-                  1350 Chrystal Lake
+                  1350 Crystal Lake Rd
                   <br />
-                  Atlanta, GA 12345
+                  Atlanta, GA 30349
                 </address>
               </div>
               <div class="address">
-                <address>(123) 456-000</address>
+                <address>(123) 456-0000</address>
               </div>
               <div class="address">
-                <address>admin@gcms.com</address>
+                <address>badrundeed@gmail.com</address>
               </div>
             </div>
           </Col>

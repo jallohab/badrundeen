@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
-function AboutUs() {
+function Classes() {
   return (
     <>
       <RenderJumbotron />
@@ -57,4 +57,4 @@ function RenderAboutInformation() {
   );
 }
 
-export default AboutUs;
+export default Classes;
