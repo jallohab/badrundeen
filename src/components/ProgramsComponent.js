@@ -57,18 +57,38 @@ function RenderProgramInformation() {
       </div>
       <div className="row">
         <div className="col-6 adult-class">
-          <h4>&lt; Adults classes &gt;</h4>
-          <p>Interest in joining in the programs</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSceKjdXkiC8s4jfNt0uSVj8e7c7M-nhOxmJ8uqv6ivc174LSA/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+          >
+            <h4>&lt; Adults classes &gt;</h4>
+            <p>Interest in joining the kids programs</p>
+          </a>
         </div>
+
         <div className="col-6 children-class">
-          <h4>&lt; Kids classes &gt;</h4>
-          <p>Interest in joining in the programs</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd1cM08GmAZq-uKBQcfGp7Grtu-hD4yA5fZJJqjHV_ghGeJWw/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+          >
+            <h4>&lt; Kids classes &gt;</h4>
+            <p>Interest in joining the adults programs</p>
+          </a>
         </div>
       </div>
       <div className="row students-join">
         <div className="col-12">
-          <h4>&lt; Students &gt;</h4>
-          <p>Interest in joining in the programs</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfJhpERW12UheOc07Ixf60V6Dt7pF7DhQfjp6mUQU5UdYRPOg/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+          >
+            <h4>&lt; Volunteers &gt;</h4>
+
+            <p>
+              Interest in to volunteer whether to be a teacher or just assist
+              for some day(s)
+            </p>
+          </a>
         </div>
       </div>
       <div className="row" style={{ backgroundColor: "white" }}>
@@ -91,7 +111,7 @@ function RenderProgramInformation() {
           <Card className="events">
             <CardBody>
               <h5 className="card-text" style={{ color: "blue", fontSize: 20 }}>
-                Others events
+                Other events
               </h5>
               <h6>6:00PM</h6>
             </CardBody>

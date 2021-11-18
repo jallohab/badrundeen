@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import "../App.css";
-import { NavbarBrand } from "reactstrap";
+import { NavbarBrand, Navbar } from "reactstrap";
 
 function Header(props) {
   return (
@@ -15,7 +15,7 @@ function Header(props) {
         ></img>
       </NavbarBrand>
       <h3 className="masthead-brand badrundeedHeader">BADRUNDEEN</h3>
-      <Nav className="nav nav-masthead pl-3">
+      <Nav className="nav nav-masthead me-auto pl-3">
         <Nav.Link href="/home">Home</Nav.Link>
         <Nav.Link href="/programs">Programs</Nav.Link>
         <Nav.Link href="/instructors">Our Instructors</Nav.Link>
