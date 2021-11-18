@@ -57,41 +57,43 @@ function RenderProgramInformation() {
       </div>
       <div className="row">
         <div className="col-6 adult-class">
-          <h4>Adults classes &gt;</h4>
+          <h4>&lt; Adults classes &gt;</h4>
           <p>Interest in joining in the programs</p>
         </div>
         <div className="col-6 children-class">
-          <h4>Kids classes &gt;</h4>
+          <h4>&lt; Kids classes &gt;</h4>
           <p>Interest in joining in the programs</p>
         </div>
       </div>
       <div className="row students-join">
         <div className="col-12">
-          <h4>Students &gt;</h4>
+          <h4>&lt; Students &gt;</h4>
           <p>Interest in joining in the programs</p>
         </div>
       </div>
       <div className="row" style={{ backgroundColor: "white" }}>
         <div className="col-12" style={{ paddingBottom: 3 }}>
-          <h4 className="title" style={{ color: "black", fontSize: 40 }}>
+          <h4 className="card-text" style={{ color: "black", fontSize: 40 }}>
             Events
           </h4>
         </div>
         <div className="col-sm-10 offset-sm-1 mb-2">
           <Card className="events">
             <CardBody>
-              <p style={{ color: "blue" }}>
-                Interest in joining in the programs
-              </p>
+              <h5 className="card-text" style={{ color: "blue", fontSize: 20 }}>
+                Jummah Prayer
+              </h5>
+              <h6> 1:30PM</h6>
             </CardBody>
           </Card>
         </div>
         <div className="col-sm-10 offset-sm-1 mb-4">
           <Card className="events">
             <CardBody>
-              <p style={{ color: "blue" }}>
-                Interest in joining in the programs
-              </p>
+              <h5 className="card-text" style={{ color: "blue", fontSize: 20 }}>
+                Others events
+              </h5>
+              <h6>6:00PM</h6>
             </CardBody>
           </Card>
         </div>

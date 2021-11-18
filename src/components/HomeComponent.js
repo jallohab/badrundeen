@@ -4,7 +4,7 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="homes">
       <h1
         className="title"
         style={{

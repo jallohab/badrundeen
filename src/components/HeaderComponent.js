@@ -14,7 +14,7 @@ function Header(props) {
           width="40"
         ></img>
       </NavbarBrand>
-      <h3 className="masthead-brand">BADRUNDEEN</h3>
+      <h3 className="masthead-brand badrundeedHeader">BADRUNDEEN</h3>
       <Nav className="nav nav-masthead pl-3">
         <Nav.Link href="/home">Home</Nav.Link>
         <Nav.Link href="/programs">Programs</Nav.Link>

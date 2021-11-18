@@ -5,12 +5,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image, Label } from "semantic-ui-react";
 import { Collapse, CardBody, Card, CardHeader } from "reactstrap";
+import { zoomIn } from "react-animations";
+import styled, { keyframes } from "styled-components";
 
 import "../App.css";
-
-// import { Form, Button, FormGroup, FormText } from "react-bootstrap";
-// import { Input } from "reactstrap";
-// import { Row, Col, Container } from "reactstrap";
+const ZoomInAnimation = keyframes`${zoomIn}`;
+const ZoomInImg = styled.div`
+  animation: infinite 5s ${ZoomInAnimation};
+`;
 
 const responsive = {
   desktop: {
@@ -61,14 +63,16 @@ class Instructors extends Component {
                 className="container"
                 style={{ margin: 50, paddingRight: 60 }}
               >
-                <Image
-                  draggable={false}
-                  style={{
-                    width: "100%",
-                    height: "300px",
-                  }}
-                  src={e.image}
-                />
+                <ZoomInImg>
+                  <Image
+                    draggable={false}
+                    style={{
+                      width: "100%",
+                      height: "300px",
+                    }}
+                    src={e.image}
+                  />
+                </ZoomInImg>
                 <div className="titleDesc">
                   <Card onClick={this.toggle}>
                     <CardHeader className="instrcutor-name">
@@ -76,7 +80,7 @@ class Instructors extends Component {
                         className="font-weight-bold "
                         style={{ color: "orange" }}
                       >
-                        <h4 className="card-title">{e.name}</h4>
+                        <h4 className="title">{e.name}</h4>
                       </span>
                     </CardHeader>
                     <Collapse isOpen={this.state.collapse}>

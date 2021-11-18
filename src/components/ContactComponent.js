@@ -18,12 +18,16 @@ function RenderContactForm() {
       <Container className="mt-5">
         <Row>
           <Col>
-            <h2>Message Us</h2>
+            <h2 className="card-text">What We Can Do For You.</h2>
           </Col>
         </Row>
         <hr className="my-4" />
         <Row>
-          <Col className="mycontent-left" xs={6}>
+          <Col
+            className="mycontent-left"
+            xs={6}
+            style={{ backgroundColor: "lightseagreen" }}
+          >
             <div
               style={{
                 justifyContent: "center",
