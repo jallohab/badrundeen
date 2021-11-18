@@ -10,6 +10,24 @@ const Prayers = () => {
   //   };
   // }
 
+  function PrayingImage() {
+    return (
+      <>
+        <div className="row mb-4 mt-3"></div>
+        <div className="jumbotron width: 100%">
+          <h2 className="text-left title">
+            And establish prayer and give zakah and bow with those who bow [in
+            worship and obedience].
+          </h2>
+          <p className="lead text-left inTitle" style={{ color: "orangered" }}>
+            Surah Baqarah - 2:2-4
+          </p>
+          <hr className="my-4" />
+        </div>
+      </>
+    );
+  }
+
   const [items, setItems] = useState([]);
   // const api =
   //     "http://api.aladhan.com/v1/calendarByAddress?address=1350%20Crystal%20lake%20Rd,%20Atlanta,%20GA,%20USA&method=2&month=11&year=2021";
@@ -39,7 +57,7 @@ const Prayers = () => {
   // }
   const prayers = items.slice(0, 1);
   return (
-    <div style={{ paddingTop: 120 }}>
+    <div style={{ paddingTop: 80 }}>
       <h4 className="title" style={{ paddingBottom: 25, color: "yellow" }}>
         Prayers will change depends on whether, so make sure to check all of the
         time.
@@ -95,6 +113,7 @@ const Prayers = () => {
                     </tr>
                   </tbody>
                 </Table>
+                <PrayingImage />
               </div>
             );
           })

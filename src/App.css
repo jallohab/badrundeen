@@ -177,11 +177,11 @@ body {
 }
 
 .jumbotron {
-  background-image: url("../src/images/jumbotron.jpg");
-  height: 300px;
+  background-image: url("../src/images/prayingTimes.jpeg");
+  height: 230px;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 1px solid #333;
+  border-bottom: 5px solid #333;
 }
 
 /* .mycontent-left {
