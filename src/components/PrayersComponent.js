@@ -62,62 +62,60 @@ const Prayers = () => {
         Prayers will change depends on whether, so make sure to check all of the
         time.
       </h4>
-      {items && items.length > 0
-        ? prayers.map((pray, i) => {
-            return (
-              <div key={i}>
-                <Table
-                  className="title"
-                  striped
-                  bordered
-                  hover
-                  variant="dark"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <thead>
-                    <tr>
-                      <th
-                        className={"w-25"}
-                        style={{ color: "white", fontSize: 25 }}
-                      >
-                        Prayers 🛐
-                      </th>
-                      <th
-                        className={"w-25"}
-                        style={{ color: "white", fontSize: 25 }}
-                      >
-                        Times ⏱
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style={{ color: "white" }}>Fajr</td>
-                      <td style={{ color: "white" }}>{pray.timings.Fajr}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ color: "white" }}>Dhuhr</td>
-                      <td style={{ color: "white" }}>{pray.timings.Dhuhr}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ color: "white" }}>Asr</td>
-                      <td style={{ color: "white" }}>{pray.timings.Asr}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ color: "white" }}>Maghrib</td>
-                      <td style={{ color: "white" }}>{pray.timings.Maghrib}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ color: "white" }}>Isha</td>
-                      <td style={{ color: "white" }}>{pray.timings.Isha}</td>
-                    </tr>
-                  </tbody>
-                </Table>
-                <PrayingImage />
-              </div>
-            );
-          })
-        : "Loading..."}
+      {prayers.map((pray, i) => {
+        return (
+          <div key={i}>
+            <Table
+              className="title"
+              striped
+              bordered
+              hover
+              variant="dark"
+              style={{ backgroundColor: "black" }}
+            >
+              <thead>
+                <tr>
+                  <th
+                    className={"w-25"}
+                    style={{ color: "white", fontSize: 25 }}
+                  >
+                    Prayers 🛐
+                  </th>
+                  <th
+                    className={"w-25"}
+                    style={{ color: "white", fontSize: 25 }}
+                  >
+                    Times ⏱
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ color: "white" }}>Fajr</td>
+                  <td style={{ color: "white" }}>{pray.timings.Fajr}</td>
+                </tr>
+                <tr>
+                  <td style={{ color: "white" }}>Dhuhr</td>
+                  <td style={{ color: "white" }}>{pray.timings.Dhuhr}</td>
+                </tr>
+                <tr>
+                  <td style={{ color: "white" }}>Asr</td>
+                  <td style={{ color: "white" }}>{pray.timings.Asr}</td>
+                </tr>
+                <tr>
+                  <td style={{ color: "white" }}>Maghrib</td>
+                  <td style={{ color: "white" }}>{pray.timings.Maghrib}</td>
+                </tr>
+                <tr>
+                  <td style={{ color: "white" }}>Isha</td>
+                  <td style={{ color: "white" }}>{pray.timings.Isha}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <PrayingImage />
+          </div>
+        );
+      })}
     </div>
   );
 };
