@@ -42,6 +42,10 @@ body {
 .title {
   font-family: Georgia, serif;
 }
+.text-left {
+  font-family: Georgia, serif;
+  color: ghostwhite;
+}
 .inTitle {
   font-family: "Lucida Console", "Courier New", monospace;
   /* font-size: 200; */
@@ -99,36 +103,29 @@ body {
 
 
 .homes h1 { color: tomato; }
-/* .homes h1:nth-child(2n) { color: lightseagreen; }
-.homes h1:nth-child(3n) { color: orange; }
-.homes h1:nth-child(4n) { color: dodgerblue; }
-.homes h1:nth-child(5n) { color: blueviolet; } */
 
-/* .masthead-brand {
-  margin-bottom: 0;
-} */
 
-.nav-masthead .Nav.Link {
+/* .nav-masthead .Nav.Link {
   padding: 0.25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
-}
+} */
 
-.nav-masthead .Nav.Link:hover,
+/* .nav-masthead .Nav.Link:hover,
 .nav-masthead .Nav.Link:focus {
   border-bottom-color: rgba(255, 255, 255, 0.25);
-}
+} */
 
-.nav-masthead .Nav.Link + .Nav.Link {
+/* .nav-masthead .Nav.Link + .Nav.Link {
   margin-left: 1rem;
-}
+} */
 
-.nav-masthead .active {
+/* .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
-}
+} */
 
 @media (min-width: 48em) {
   .masthead-brand {

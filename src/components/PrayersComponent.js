@@ -13,9 +13,9 @@ const Prayers = () => {
   function PrayingImage() {
     return (
       <>
-        <div className="row mb-4 mt-3"></div>
+        <div className="row mb-3 mt-1"></div>
         <div className="jumbotron width: 100%">
-          <h2 className="text-left title">
+          <h2 className="text-left">
             And establish prayer and give zakah and bow with those who bow [in
             worship and obedience].
           </h2>
@@ -34,7 +34,7 @@ const Prayers = () => {
 
   useEffect(() => {
     fetch(
-      "http://api.aladhan.com/v1/calendarByAddress?address=1350%20Crystal%20lake%20Rd,%20Atlanta,%20GA,%20USA&method=2&month=11&year=2021"
+      "http://api.aladhan.com/v1/calendarByAddress?address=1350%20Crystal%20lake%20Rd,%20Atlanta,%20GA,%20USA&method=2&month=12&year=2021"
     )
       .then((response) => response.json())
 
