@@ -37,7 +37,7 @@ export const INSTRUCTORS = [
     id: 4,
     name: "Mamadou Cherif",
     image:
-      "https://lh3.googleusercontent.com/proxy/eLCRUwRi_2RxezHbiqC2ypn8uBJqGZ6dSmFFVmX3fwxdwEbBtgPCGSpKuaSHpl8xdofxoQw-BB0JpX1kie5BzoNqhIMc2_bB2VkMavo1zxp69rqir1ZQtYBKWejKGyF_m_nQub_TeWQ2W9j92A",
+      "https://imgprd19.hobbylobby.com/4/49/a9/449a9b696115efbd65f679ed9e7d9fb7b4e7ec3b/700Wx700H-190306-0320-px.jpg",
     description:
       "Sit amet cursus sit amet dictum sit amet justo donec. Vulputate ut pharetra sit amet aliquam id. Lacinia quis vel eros donec ac odio. Sollicitudin nibh sit amet commodo nulla. Vel orci porta non pulvinar. Amet justo donec enim diam vulputate ut pharetra. Euismod nisi porta lorem mollis. Gravida neque convallis a cras semper. Aliquam etiam erat velit scelerisque. Lacus luctus accumsan tortor posuere ac ut consequat semper. Hendrerit dolor magna eget est lorem. Morbi tristique senectus et netus et malesuada fames ac. Aliquam vestibulum.",
   },

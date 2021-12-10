@@ -20,7 +20,7 @@ function Header(props) {
         <Nav.Link href="/programs">Programs</Nav.Link>
         <Nav.Link href="/instructors">Our Instructors</Nav.Link>
         <Nav.Link href="/prayers">Prayer Time</Nav.Link>
-        <Nav.Link href="/donate">Donate</Nav.Link>
+        {/* <Nav.Link href="/donate">Donate</Nav.Link> */}
         <Nav.Link href="/contact">Contact Us</Nav.Link>
       </Nav>
     </div>

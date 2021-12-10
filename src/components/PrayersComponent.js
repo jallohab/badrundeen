@@ -34,7 +34,7 @@ const Prayers = () => {
 
   useEffect(() => {
     fetch(
-      "http://api.aladhan.com/v1/calendarByAddress?address=1350%20Crystal%20lake%20Rd,%20Atlanta,%20GA,%20USA&method=2&month=12&year=2021"
+      "http://api.aladhan.com/v1/calendarByAddress?address=1350%20Crystal%20lake%20Rd,%20Atlanta,%20GA,%20USA"
     )
       .then((response) => response.json())
 

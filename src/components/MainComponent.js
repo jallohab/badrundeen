@@ -22,7 +22,7 @@ class Main extends Component {
           {/* <Route path="/features" render={() => <Feature item={FEATURES} />} /> */}
           <Route path="/programs" component={Programs} />
           <Route path="/prayers" component={Prayers} />
-          <Route path="/donate" component={Donate} />
+          {/* <Route path="/donate" component={Donate} /> */}
 
           <Redirect to="/home" />
         </Switch>
